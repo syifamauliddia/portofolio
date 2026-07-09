@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kreya UI/UX Case Study - Syifa Mauliddia</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* CSS SAMA PERSIS SEPERTI SEBELUMNYA */
+:root { --navy:#1E1B8B; --lavender:#8A87D8; --off:#F8F9FF; --grid:rgba(30,27,139,0.07); }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--off);color:#2a2a5a;line-height:1.8;}
+.grid{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px}
+nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;background:rgba(248,249,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(30,27,139,.08); position: sticky; top:0; z-index:100;}
+.back-btn{text-decoration:none;color:var(--navy);font-weight:600;font-size:.9rem;display:flex;align-items:center;gap:8px;transition:transform .2s;}
+.back-btn:hover{transform:translateX(-5px);}
+.repo-btn{background:var(--navy);color:white;padding:10px 24px;border-radius:24px;text-decoration:none;font-weight:500;font-size:.85rem;transition:all .2s;}
+.repo-btn:hover{background:#16147A;transform:translateY(-2px);box-shadow:0 8px 20px rgba(30,27,139,.2);}
+.cs-hero{padding:100px 48px 60px;text-align:center;}
+.cs-title{font-family:'DM Serif Display',serif;font-size:3.5rem;color:var(--navy);line-height:1.1;margin-bottom:16px;}
+.cs-role{font-size:1.1rem;font-weight:600;color:var(--lavender);margin-bottom:24px;letter-spacing:1px;text-transform:uppercase;}
+.tech-tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;}
+.t-tag{background:rgba(30,27,139,.08);color:var(--navy);padding:6px 16px;border-radius:20px;font-size:.85rem;font-weight:600;}
+.hero-img{width:100%;max-width:900px;border-radius:24px;box-shadow:0 24px 50px rgba(30,27,139,.15);margin:0 auto;display:block;}
+.cs-body{max-width:800px;margin:0 auto;padding:60px 24px;}
+.cs-section{margin-bottom:50px;}
+.cs-section h3{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--navy);margin-bottom:20px;display:flex;align-items:center;gap:12px;}
+.cs-section h3::before{content:'';display:block;width:24px;height:2px;background:var(--lavender);}
+.cs-section p{margin-bottom:16px;font-size:1.05rem;}
+.highlight-box{background:rgba(138,135,216,.1);border-left:4px solid var(--navy);padding:24px;border-radius:0 12px 12px 0;margin:30px 0;}
+.highlight-box h4{color:var(--navy);margin-bottom:8px;font-size:1.1rem;}
+footer{text-align:center;padding:40px;font-size:.85rem;color:white;background:var(--navy);margin-top:40px;}
+@media (max-width: 768px){ .cs-hero{padding:80px 24px 40px;} .cs-title{font-size:2.5rem;} nav{padding:16px 24px;} }
+</style>
+</head>
+<body class="grid">
+
+<nav>
+  <a href="index.html" class="back-btn">← Kembali ke Portofolio</a>
+</nav>
+
+<header class="cs-hero">
+  <div class="cs-role">UI/UX Competition Project</div>
+  <h1 class="cs-title">Kreya: Merancang Pengalaman<br>Pengguna yang Kompetitif</h1>
+  <div class="tech-tags">
+    <span class="t-tag">Figma</span>
+    <span class="t-tag">Wireframing</span>
+    <span class="t-tag">Interactive Prototyping</span>
+    <span class="t-tag">Color Psychology</span>
+  </div>
+  <img src="porto/6.jpg" alt="UI/UX Kreya Project" class="hero-img">
+</header>
+
+<main class="cs-body">
+  
+  <section class="cs-section">
+    <h3>Konteks Kompetisi</h3>
+    <p>Merancang aplikasi untuk kompetisi UI/UX menuntut standar yang jauh lebih tinggi daripada tugas perkuliahan biasa. Karya tidak hanya dinilai dari seberapa indah tampilannya, tetapi seberapa logis alur pengguna (<em>User Experience</em>) yang ditawarkan untuk menyelesaikan masalah spesifik dalam waktu singkat.</p>
+  </section>
+
+  <section class="cs-section">
+    <h3>Proses Desain Visual & Logika Tata Letak</h3>
+    <p>Proses kreatif dimulai dari penyusunan <em>wireframe</em> (kerangka kasar) untuk memastikan hierarki informasi sudah tepat sebelum masuk ke tahap pewarnaan (<em>High-Fidelity UI</em>). Saya memanfaatkan <strong>Figma</strong> sebagai alat utama untuk merakit setiap layar aplikasi secara mendetail.</p>
+    
+    <div class="highlight-box">
+      <h4>Psikologi Warna & Tata Letak (Layouting)</h4>
+      <p>Kunci dari <em>User Experience</em> yang baik adalah kejelasan. Saya mengatur hirarki visual melalui kontras warna dan tipografi yang tepat agar elemen penting (seperti tombol <em>Call-to-Action</em>) langsung terlihat oleh mata pengguna. Pengaturan <em>layout</em> dirancang sedemikian rupa agar struktur informasi mudah dipindai (<em>scannable</em>) dan diinterpretasikan tanpa memerlukan <em>tutorial</em> khusus.</p>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h3>Prototyping & Hasil Akhir</h3>
+    <p>Desain statis tidak cukup untuk memvalidasi ide. Oleh karena itu, saya menyambungkan seluruh layar UI menjadi sebuah <em>Prototype</em> interaktif yang menyimulasikan pengalaman aplikasi sungguhan (klik, transisi halaman, *scroll*).</p>
+    <ul style="list-style-type: disc; margin-left: 20px; font-size: 1.05rem;">
+      <li>Menghasilkan desain solusi aplikasi <em>mobile</em> yang 100% siap untuk diserahkan kepada tim <em>developer</em> (<em>Dev Handoff</em>) tanpa ambiguitas alur.</li>
+      <li>Menciptakan antarmuka yang sangat <em>user-centric</em> dan ramah bagi pengguna akhir.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Desain Visual & UX oleh Syifa Mauliddia 
+</footer>
+
+</body>
+</html>
