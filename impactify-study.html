@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impactify Case Study - Syifa Mauliddia</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* CSS SAMA PERSIS SEPERTI JOBLYNX AGAR KONSISTEN */
+:root { --navy:#1E1B8B; --lavender:#8A87D8; --off:#F8F9FF; --grid:rgba(30,27,139,0.07); }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--off);color:#2a2a5a;line-height:1.8;}
+.grid{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px}
+nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;background:rgba(248,249,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(30,27,139,.08); position: sticky; top:0; z-index:100;}
+.back-btn{text-decoration:none;color:var(--navy);font-weight:600;font-size:.9rem;display:flex;align-items:center;gap:8px;transition:transform .2s;}
+.back-btn:hover{transform:translateX(-5px);}
+.repo-btn{background:var(--navy);color:white;padding:10px 24px;border-radius:24px;text-decoration:none;font-weight:500;font-size:.85rem;transition:all .2s;}
+.repo-btn:hover{background:#16147A;transform:translateY(-2px);box-shadow:0 8px 20px rgba(30,27,139,.2);}
+.cs-hero{padding:100px 48px 60px;text-align:center;}
+.cs-title{font-family:'DM Serif Display',serif;font-size:3.5rem;color:var(--navy);line-height:1.1;margin-bottom:16px;}
+.cs-role{font-size:1.1rem;font-weight:600;color:var(--lavender);margin-bottom:24px;letter-spacing:1px;text-transform:uppercase;}
+.tech-tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;}
+.t-tag{background:rgba(30,27,139,.08);color:var(--navy);padding:6px 16px;border-radius:20px;font-size:.85rem;font-weight:600;}
+.hero-img{width:100%;max-width:900px;border-radius:24px;box-shadow:0 24px 50px rgba(30,27,139,.15);margin:0 auto;display:block;}
+.cs-body{max-width:800px;margin:0 auto;padding:60px 24px;}
+.cs-section{margin-bottom:50px;}
+.cs-section h3{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--navy);margin-bottom:20px;display:flex;align-items:center;gap:12px;}
+.cs-section h3::before{content:'';display:block;width:24px;height:2px;background:var(--lavender);}
+.cs-section p{margin-bottom:16px;font-size:1.05rem;}
+.highlight-box{background:rgba(138,135,216,.1);border-left:4px solid var(--navy);padding:24px;border-radius:0 12px 12px 0;margin:30px 0;}
+.highlight-box h4{color:var(--navy);margin-bottom:8px;font-size:1.1rem;}
+footer{text-align:center;padding:40px;font-size:.85rem;color:white;background:var(--navy);margin-top:40px;}
+@media (max-width: 768px){ .cs-hero{padding:80px 24px 40px;} .cs-title{font-size:2.5rem;} nav{padding:16px 24px;} }
+</style>
+</head>
+<body class="grid">
+
+<nav>
+  <a href="index.html" class="back-btn">← Kembali ke Portofolio</a>
+</nav>
+
+<header class="cs-hero">
+  <div class="cs-role">Mobile Application Development</div>
+  <h1 class="cs-title">Impactify: Membangun Pengalaman<br>Mobile yang Responsif</h1>
+  <div class="tech-tags">
+    <span class="t-tag">Java</span>
+    <span class="t-tag">Flutter Framework</span>
+    <span class="t-tag">Android Studio</span>
+    <span class="t-tag">Mobile UI Integration</span>
+  </div>
+  <img src="porto/5.jpg" alt="Aplikasi Mobile Impactify" class="hero-img">
+</header>
+
+<main class="cs-body">
+  
+  <section class="cs-section">
+    <h3>Tujuan Proyek</h3>
+    <p>Pengembangan aplikasi <em>mobile</em> tidak hanya sekadar membuat tampilan yang muat di layar kecil, melainkan memastikan interaksi pengguna (<em>touch, swipe, scroll</em>) terasa natural dan tidak mengalami <em>lag</em>. Impactify dibangun untuk membuktikan bahwa integrasi antara antarmuka pengguna (UI) yang kompleks dan logika <em>backend</em> yang solid dapat berjalan mulus di perangkat Android.</p>
+  </section>
+
+  <section class="cs-section">
+    <h3>Proses Development & Integrasi UI</h3>
+    <p>Tantangan utama dalam mendevelop Impactify adalah menerjemahkan desain UI ke dalam barisan kode secara <em>pixel-perfect</em> menggunakan kombinasi bahasa pemrograman Java dan ekosistem Flutter. Saya harus memastikan setiap komponen aplikasi dirender dengan efisien agar tidak membebani memori perangkat.</p>
+    
+    <div class="highlight-box">
+      <h4>Tantangan Emulator & Debugging Presisi</h4>
+      <p>Proses <em>debugging</em> dilakukan secara intensif langsung melalui emulator di <strong>Android Studio</strong>. Saya melakukan optimasi pada alur logika aplikasi untuk mencegah <em>memory leaks</em> dan memastikan perpindahan antar halaman (<em>routing</em>) berjalan optimal pada berbagai skenario penggunaan dan ukuran layar.</p>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h3>Hasil (Impact)</h3>
+    <p>Aplikasi Impactify berhasil dieksekusi dengan kriteria keberhasilan berikut:</p>
+    <ul style="list-style-type: disc; margin-left: 20px; font-size: 1.05rem;">
+      <li>Arsitektur logika aplikasi (Java/Flutter) terintegrasi secara sempurna dengan desain <em>interface</em> tanpa mengorbankan kecepatan render.</li>
+      <li>Alur navigasi pengguna berjalan lancar dan bebas dari <em>crash</em> yang tidak terduga saat diuji coba pada skenario penggunaan tinggi.</li>
+      <li>Menghasilkan aplikasi <em>mobile</em> yang tidak hanya fungsional secara fitur, tetapi juga memberikan pengalaman visual yang memanjakan mata pengguna.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Didevelop oleh Syifa Mauliddia
+</footer>
+
+</body>
+</html>
